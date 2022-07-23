@@ -1,0 +1,25 @@
+.nav-container{
+    //fixed position to top of screen
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .nav{
+        background: rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid rgb(189, 189, 189);
+        backdrop-filter: blur(1px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .nav-logo{
+            width: 75px;
+        }
+        .nav-ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+    }
+}

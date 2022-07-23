@@ -1,0 +1,20 @@
+.header-container {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../assets/bgIMG.png);
+  background-repeat: repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-container .header-text-div .header-text {
+  display: flex;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.header-container .header-text-div .header-text .Typewriter {
+  margin-left: 11px;
+}/*# sourceMappingURL=Header.css.map */
