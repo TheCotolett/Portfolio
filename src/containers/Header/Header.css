@@ -17,4 +17,41 @@
 }
 .header-container .header-text-div .header-text .Typewriter {
   margin-left: 11px;
+}
+.header-container .header-text-div .header-text .header-text-cursor {
+  -webkit-animation: blinker 1s linear infinite;
+          animation: blinker 1s linear infinite;
+}
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 100%;
+  }
+  51% {
+    opacity: 0%;
+  }
+  99% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes blinker {
+  50% {
+    opacity: 100%;
+  }
+  51% {
+    opacity: 0%;
+  }
+  99% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .header-container .header-text-div .header-text {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=Header.css.map */

@@ -17,7 +17,29 @@
             .Typewriter{
                 margin-left: 11px;
             }
+            .header-text-cursor{
+                //css blink animation
+                animation: blinker 1s linear infinite;
+                @keyframes blinker {
+                    50% {
+                        opacity: 100%;
+                    }
+                    51% {
+                        opacity: 0%;
+                    }
+                    99% {
+                        opacity: 0%;
+                    }
+                    100% {
+                        opacity: 100%;
+                    }
+                }
+            }
         }
-
+        @media (max-width: 768px){
+            .header-text{
+                flex-direction: column;
+            }
+        }
     }
 }
