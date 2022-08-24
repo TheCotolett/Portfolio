@@ -1,44 +1,45 @@
 import React from 'react'
 import './About.css'
 import { motion } from 'framer-motion'
-import { images } from '../../assets/images'
+import { images } from '../../constants'
 
 function About() {
   const about = [
     {
       id: '1',
       desc: 'I am a quick learner with a passion for coding and problem solving',
-      img: '',
+      img: images.about01,
     },
     {
       id: '2',
       desc: 'Interested in sports, DJing and technology',
-      img: '',
+      img: images.about02,
     },
     {
       id: '3',
-      desc: 'Gratuated from high school with a degree in computer science with 100/100',
-      img: '',
+      desc: 'Computer Science Degree (100/100), Italian native speaker & English B2 level',
+      img: images.about03,
     },
   ]
   return (
     <div className='about-container'>
-      <h1>About me</h1>
-      //map through about array and display each item
-      {about.map((item) => (
-        <motion.div
-          key={item.id}
-          className='about-item'
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          whileHover={{ scale: 1.2 }}
-          style={{x:100}}
-          durantion={10}
-        >
-          <img src={'../../assets/about1.png'} alt='about' />
-          <p>{item.desc}</p>
-        </motion.div>
-      ))}
+      <h1 className='about-title'>About me</h1>
+      <div className='about-wrapper'>
+        {about.map((item) => (
+          <motion.div
+            key={item.id}
+            className='about-card'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            whileHover={{ scale: 1.2 }}
+            //style={{x:100}}
+            durantion={10}
+          >
+            <img className='about-img' src={item.img} alt='about' />
+            <p className='about-p'>{item.desc}</p>
+          </motion.div>
+        ))}
+      </div>
     </div>
   )
 }

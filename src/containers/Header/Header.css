@@ -53,5 +53,6 @@
 @media (max-width: 768px) {
   .header-container .header-text-div .header-text {
     flex-direction: column;
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=Header.css.map */

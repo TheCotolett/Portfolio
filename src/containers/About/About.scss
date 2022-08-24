@@ -1,8 +1,89 @@
 .about-container{
+    padding-top: 0%;
     height: 100vh;
     width: 100%;
     //background-image: url(../../assets/bgWhite.png);
     background-repeat: repeat;
     background-size: cover;
     background-color: rgb(237, 242, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .about-title{
+        padding-top: 10%;
+    }
+    .about-wrapper{
+        padding-top: 10vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        //border: 1px solid red;
+        width: 90%;
+        .about-card{
+            //border: 1px solid blue;
+            width: 28vw;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .about-img{
+                width: 60%;
+                object-fit: cover;
+                border-radius: 2rem;
+            }
+            .about-p{
+                width: 70%;
+                text-align: center;
+                font-size: 1.5rem;
+                white-space: pre-line;
+                color: rgb(94, 94, 94);
+            }
+        }
+    }
+    //media query
+}
+
+@media (max-width: 700px) {
+    .about-container{
+        padding-top: 0px;
+        .about-wrapper{
+            padding-top: 1vh;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            .about-card{
+                width: 45vw;
+                .about-p{
+                    font-size: 2.8vw;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .about-container{
+        padding-top: 0px;
+        .about-wrapper{
+            padding-top: 3vh;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            
+        justify-content: space-evenly;
+            .about-card{
+                width: 60vw;
+                .about-p{
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    .about-wrapper{
+        height: 100%;
+        justify-content: space-evenly;
+    }
+    
 }

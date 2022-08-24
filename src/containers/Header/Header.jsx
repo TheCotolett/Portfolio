@@ -1,5 +1,4 @@
 import React from 'react'
-import {images} from '../../constants/index'
 import Typewriter from 'typewriter-effect';
 import './Header.css'
 
@@ -9,7 +8,7 @@ function Header() {
       <div className='header-text-div'>
         <h1 className='header-text'> Hello, I'm<Typewriter
           options={{
-            strings: ['Lorenzo', 'a Frontend Developer', 'a React Developer', 'a SCSS Developer'],
+            strings: ['Lorenzo', 'a Frontend Developer', 'a React Developer', 'a Java Developer'],
             autoStart: true,
             loop: true,
             delay: 150,
