@@ -17,23 +17,26 @@
         align-items: center;
         justify-content: center;
         .skill{
+            margin: 0px 1rem 0px 1rem;
             .skill-name{
                 text-align: center;
+                color: rgb(94, 94, 94);
+                margin-top: 1px;
+            }
+            .skill-icon-div{
+                margin: 0.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 5rem;
+                height: 5rem;
+                border-radius: 1rem;
+                padding: 0.5rem;
+                background-color: white;
+                .skill-icon{
+                    height: 50px;   
+                }
             }
         }
-    }
-}
-.skill-icon-div{
-    margin: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    background-color: white;
-    .skill-icon{
-        height: 50px;   
     }
 }
