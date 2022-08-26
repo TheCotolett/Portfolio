@@ -55,15 +55,17 @@ function Skills() {
                   className="project"
                 >
                   <h2> {project.name} </h2>
+                  <h3> {project.type} </h3>
                   <img className='project-icon' src={urlFor(project.image)} alt="project" />
 
                   <motion.div
                     className='project-links-mdiv'
-                    whileHover={{opacity: [0,1]}}
+                    whileInView={{opacity: [0,1]}}
                     transition={{duration: 1}}
                   >
-                    <a href={project.app}></a>
-                    <a href={project.link}></a>
+                    
+                    {project.app != null && <a href={project.app} target="_blank" rel="noreferrer"> Visit </a>}
+                    <a href={project.git} target="_blank" rel="noreferrer"> Code </a>
                   </motion.div>
 
                 </motion.div>
