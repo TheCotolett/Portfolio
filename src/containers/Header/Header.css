@@ -5,6 +5,7 @@
   background-repeat: repeat;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -55,4 +56,34 @@
     flex-direction: column;
     font-size: 2rem;
   }
+}
+.header-container .git-button {
+  text-decoration: none;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50px;
+  font-size: 18pt;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: 1.5s;
+}
+.header-container .git-button svg {
+  margin: 5px;
+}
+.header-container .git-button .git-btn-txt {
+  transition: 1s;
+  margin: 0px;
+  font-size: 0px;
+}
+.header-container .git-button:hover {
+  transition: 1.5s;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.header-container .git-button:hover .git-btn-txt {
+  margin-left: 5px;
+  margin-right: 5px;
+  transition: 1s;
+  font-size: 16px;
 }/*# sourceMappingURL=Header.css.map */

@@ -1,6 +1,8 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import Typewriter from 'typewriter-effect';
 import './Header.css'
+import {FiGithub} from 'react-icons/fi'
 
 function Header() {
   return (
@@ -24,6 +26,14 @@ function Header() {
         />
         </h1>
       </div>
+        <motion.button 
+        className='git-button'
+        onClick={(e) => {
+          e.preventDefault();
+          window.open('https://github.com/TheCotolett/Portfolio','_blank');
+          }
+        }
+        > <FiGithub/> <p className='git-btn-txt'>Check out the code</p> </motion.button>
     </div>
   )
 }
