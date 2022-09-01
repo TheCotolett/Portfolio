@@ -2,6 +2,8 @@ import { motion } from 'framer-motion'
 import { urlFor, client } from '../../client'
 import React, { useState, useEffect } from 'react'
 //import ReactTooltip from 'react-tooltip'
+import {FiGithub} from 'react-icons/fi'
+import {MdOpenInBrowser} from 'react-icons/md'
 import './Skills.css'
 
 function Skills() {
@@ -20,7 +22,7 @@ function Skills() {
     })
     
   }, [])
-
+  
   return (
     <div className='skill-section'>
       <h2 className='skills-title'> Skills & Experience </h2>
@@ -45,27 +47,29 @@ function Skills() {
       </div>
 
       <div className='projects-wrapper'>
+        <h2> Projects </h2>
           <motion.div className='projects-list'>
             {
               projects.map( (project) => (
                 <motion.div
                   key={project.name}
-                  whileInView={{opacity: [0, 1]}}
-                  transition={{duration: 0.5}}
+                  whileInView={{opacity: [0, 0, 0, 0.5, 1]}}
+                  transition={{duration: 1.5}}
                   className="project"
                 >
                   <h2> {project.name} </h2>
                   <h3> {project.type} </h3>
-                  <img className='project-icon' src={urlFor(project.image)} alt="project" />
-
+                  <div className="icon-div">
+                    <img className='project-icon' src={urlFor(project.image)} alt="project" />
+                  </div>
                   <motion.div
                     className='project-links-mdiv'
-                    whileInView={{opacity: [0,1]}}
-                    transition={{duration: 1}}
+                    whileInView={{opacity: [0, 0, 0, 0.5, 1]}}
+                    transition={{duration: 1.5}}
                   >
                     
-                    {project.app != null && <a href={project.app} target="_blank" rel="noreferrer"> Visit </a>}
-                    <a href={project.git} target="_blank" rel="noreferrer"> Code </a>
+                    {project.app != null && <a href={project.app} target="_blank" rel="noreferrer"> <MdOpenInBrowser/> </a>}
+                    <a href={project.git} target="_blank" rel="noreferrer"> <FiGithub/> </a>
                   </motion.div>
 
                 </motion.div>
