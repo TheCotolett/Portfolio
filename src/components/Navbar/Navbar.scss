@@ -4,6 +4,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 100;
 
     .nav{
         //background: rgba(0, 0, 0, 0.05);
@@ -23,6 +24,7 @@
             align-items: center;
             justify-content: space-evenly;
             width: 100%;
+            margin: 0px;
             .nav-li{
                 text-decoration: none;
                 display: flex;
@@ -39,10 +41,12 @@
                     border: 1px solid rgba(0, 0, 0, 0);
                 }
                 .nav-link{
+                    margin: 0px;
                     transition: 0.4s;
                     text-decoration: none;
                     color: rgb(94, 94, 94);
                     font-weight: 500;
+                    cursor: pointer;
                 }
             }
             .nav-li:hover{

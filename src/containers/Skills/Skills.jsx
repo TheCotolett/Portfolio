@@ -24,7 +24,7 @@ function Skills() {
   }, [])
   
   return (
-    <div className='skill-section'>
+    <div className='skill-section' id="Skills">
       <h2 className='skills-title'> Skills & Experience </h2>
       <div className='skills-wrapper'>
         <motion.div className='skills-list'>

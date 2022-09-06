@@ -1,6 +1,7 @@
 import React from 'react'
 import { images } from '../../constants/index'
 import './Navbar.css'
+import {Link} from 'react-scroll'
 
 function Navbar() {
   return (
@@ -12,7 +13,7 @@ function Navbar() {
             return (
               <li className='nav-li' key={item}>
                 <div className="circle"></div>
-                <a href="#" className='nav-link' >{item}</a>
+                <Link to={item} spy={true} smooth={true} duration={500} className='nav-link'>{item}</Link>
                 {/* Finire con React Link e Routing*/}
               </li>
             );

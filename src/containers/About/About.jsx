@@ -22,7 +22,7 @@ function About() {
     },
   ]
   return (
-    <div className='about-container'>
+    <div className='about-container' id="About">
       <h1 className='about-title'>About me</h1>
       <div className='about-wrapper'>
         {about.map((item) => (

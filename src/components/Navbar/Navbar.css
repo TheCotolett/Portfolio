@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 .nav-container .nav {
   background: rgba(255, 255, 255, 0.05);
@@ -22,6 +23,7 @@
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  margin: 0px;
 }
 .nav-container .nav .nav-ul .nav-li {
   text-decoration: none;
@@ -40,10 +42,12 @@
   border: 1px solid rgba(0, 0, 0, 0);
 }
 .nav-container .nav .nav-ul .nav-li .nav-link {
+  margin: 0px;
   transition: 0.4s;
   text-decoration: none;
   color: rgb(94, 94, 94);
   font-weight: 500;
+  cursor: pointer;
 }
 .nav-container .nav .nav-ul .nav-li:hover .circle {
   transition: 0.4s;

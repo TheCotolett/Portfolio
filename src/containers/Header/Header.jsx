@@ -6,7 +6,7 @@ import {FiGithub} from 'react-icons/fi'
 
 function Header() {
   return (
-    <div className='header-container'>
+    <div className='header-container' id="Home">
       <div className='header-text-div'>
         <h1 className='header-text'> Hello, I'm<Typewriter
           options={{
