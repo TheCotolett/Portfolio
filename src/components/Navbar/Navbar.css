@@ -17,8 +17,53 @@
   width: 75px;
 }
 .nav-container .nav .nav-ul {
+  list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+}
+.nav-container .nav .nav-ul .nav-li {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.nav-container .nav .nav-ul .nav-li .circle {
+  transition: 0.4s;
+  background-color: rgba(251, 255, 0, 0);
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin-bottom: 5px;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.nav-container .nav .nav-ul .nav-li .nav-link {
+  transition: 0.4s;
+  text-decoration: none;
+  color: rgb(94, 94, 94);
+  font-weight: 500;
+}
+.nav-container .nav .nav-ul .nav-li:hover .circle {
+  transition: 0.4s;
+  background-color: rgb(251, 255, 0);
+  border: 1px solid rgba(95, 95, 95, 0.534);
+}
+.nav-container .nav .nav-ul .nav-li:hover .nav-link {
+  transition: 0.4s;
+  color: black;
+}
+
+@media (max-width: 700px) {
+  .nav-li {
+    margin: 0px;
+  }
+  .nav-li .circle {
+    display: none;
+  }
+  .nav-li .nav-link {
+    transition: 0.4s;
+    color: black;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

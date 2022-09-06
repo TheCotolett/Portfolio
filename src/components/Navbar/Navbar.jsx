@@ -8,10 +8,11 @@ function Navbar() {
       <nav className='nav'>
         <img className='nav-logo' src={images.javascript} alt="logo"></img>
         <ul className='nav-ul'>
-          {['Header', 'About', 'Skills', 'Contact'].map((item) => {
+          {['Home', 'About', 'Skills'].map((item) => {
             return (
               <li className='nav-li' key={item}>
-                <p className='nav-link' >{item}</p>
+                <div className="circle"></div>
+                <a href="#" className='nav-link' >{item}</a>
                 {/* Finire con React Link e Routing*/}
               </li>
             );
